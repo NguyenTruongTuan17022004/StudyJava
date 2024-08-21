@@ -7,11 +7,6 @@ public class Main {
         Library library = new Library();
 
         // Thêm 5 cuốn sách vào thư viện
-        library.addBook(new Book("Tự học Java", "Nguyễn Trường Tuấn", "001"));
-        library.addBook(new Book("Lừa đảo chuyên nghiệp", "Trung tâm Nestech", "002"));
-        library.addBook(new Book("Conan", "Aoyama Gōshō", "003"));
-        library.addBook(new Book("Doremon", "Fujiko Fujio", "004"));
-        library.addBook(new Book("Toán hình", "Nguyễn Văn A", "005"));
 
         // Hiển thị danh sách sách hiện có trong thư viện
         System.out.println("Danh sách sách trong thư viện:");
@@ -19,8 +14,6 @@ public class Main {
 
         try {
             // Mượn một vài cuốn sách
-            library.borrowBook("003", "Aoyama Gōshō");
-            library.borrowBook("002", "Trung tâm Nestech");
 
             // Hiển thị trạng thái của thư viện sau khi mượn
             System.out.println("\nTrạng thái sau khi mượn:");
@@ -31,7 +24,6 @@ public class Main {
 
         try {
             // Trả lại sách
-            library.returnBook("003");
 
             // Hiển thị trạng thái của thư viện sau khi trả sách
             System.out.println("\nTrạng thái sau khi trả sách:");
